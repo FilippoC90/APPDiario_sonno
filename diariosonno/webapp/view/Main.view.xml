@@ -1,0 +1,105 @@
+<mvc:View controllerName="diario.diariosonno.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <HBox id="_IDGenHBox" alignItems="Center" justifyContent="Start" class="sapUiSmallMargin">
+    <Label id="_IDGenLabel" text="Seleziona mese:" class="sapUiSmallMarginEnd"/>
+    <Select id="monthSelector" change="onMonthChange" selectedKey="5">
+    <items>
+      <core:Item id="_IDGenItem1" key="1" text="Gennaio" />
+      <core:Item id="_IDGenItem" key="2" text="Febbraio" />
+      <core:Item id="_IDGenItem2" key="3" text="Marzo" />
+      <core:Item id="_IDGenItem4" key="4" text="Aprile" />
+      <core:Item id="_IDGenItem5" key="5" text="Maggio" />
+      <core:Item id="_IDGenItem6" key="6" text="Giugno" />
+      <core:Item id="_IDGenItem7" key="7" text="Luglio" />
+      <core:Item id="_IDGenItem8" key="8" text="Agosto" />
+      <core:Item id="_IDGenItem9" key="9" text="Settembre" />
+      <core:Item id="_IDGenItem10" key="10" text="Ottobre" />
+      <core:Item id="_IDGenItem11" key="11" text="Novembre" />
+      <core:Item id="_IDGenItem12" key="12" text="Dicembre" />
+    </items>
+    </Select>
+    </HBox>
+    
+    <VBox id="_IDGenVBox">
+    <Table
+      id="sleepTable"
+      items="{/days}"
+      fixedLayout="false"
+      inset="false"
+      width="auto">
+
+      <!-- Colonna giorno -->
+      <columns>
+        <Column id="_IDGenColumn">
+          <Text id="_IDGenText" text="Giorno" />
+        </Column>
+
+        <!-- Colonne ore da 00 a 12 -->
+        <Column id="_IDGenColumn1"><Text id="_IDGenText1" text="00"/></Column>
+        <Column id="_IDGenColumn2"><Text id="_IDGenText2" text="01"/></Column>
+        <Column id="_IDGenColumn3"><Text id="_IDGenText3" text="02"/></Column>
+        <Column id="_IDGenColumn4"><Text id="_IDGenText4" text="03"/></Column>
+        <Column id="_IDGenColumn5"><Text id="_IDGenText5" text="04"/></Column>
+        <Column id="_IDGenColumn6"><Text id="_IDGenText6" text="05"/></Column>
+        <Column id="_IDGenColumn7"><Text id="_IDGenText7" text="06"/></Column>
+        <Column id="_IDGenColumn8"><Text id="_IDGenText8" text="07"/></Column>
+        <Column id="_IDGenColumn9"><Text id="_IDGenText9" text="08"/></Column>
+        <Column id="_IDGenColumn10"><Text id="_IDGenText10" text="09"/></Column>
+        <Column id="_IDGenColumn11"><Text id="_IDGenText11" text="10"/></Column>
+        <Column id="_IDGenColumn12"><Text id="_IDGenText12" text="11"/></Column>
+        <Column id="_IDGenColumn13"><Text id="_IDGenText13" text="12"/></Column>
+        <Column id="_IDGenColumn14"><Text id="_IDGenText14" text="13"/></Column>
+        <Column id="_IDGenColumn15"><Text id="_IDGenText15" text="14"/></Column>
+        <Column id="_IDGenColumn16"><Text id="_IDGenText16" text="15"/></Column>
+        <Column id="_IDGenColumn17"><Text id="_IDGenText17" text="16"/></Column>
+        <Column id="_IDGenColumn18"><Text id="_IDGenText18" text="17"/></Column>
+        <Column id="_IDGenColumn19"><Text id="_IDGenText19" text="18"/></Column>
+        <Column id="_IDGenColumn20"><Text id="_IDGenText20" text="19"/></Column>
+        <Column id="_IDGenColumn21"><Text id="_IDGenText21" text="20"/></Column>
+        <Column id="_IDGenColumn22"><Text id="_IDGenText22" text="21"/></Column>
+        <Column id="_IDGenColumn23"><Text id="_IDGenText23" text="22"/></Column>
+        <Column id="_IDGenColumn24"><Text id="_IDGenText24" text="23"/></Column>
+      </columns>
+
+      <!-- Riga -->
+      <items>
+        <ColumnListItem id="_IDGenColumnListItem">
+          <cells>
+            <!-- Giorno -->
+            <Text id="_IDGenText25" text="{date}" />
+
+            <!-- Celle orarie: CheckBox o Toggle -->
+            <CheckBox id="_IDGenCheckBox" selected="{hours/0}" select="onSelectHour"/>
+            <CheckBox id="_IDGenCheckBox1" selected="{hours/1}" select="onSelectHour"/>
+            <CheckBox id="_IDGenCheckBox2" selected="{hours/2}" select="onSelectHour"/>
+            <CheckBox id="_IDGenCheckBox3" selected="{hours/3}" select="onSelectHour"/>
+            <CheckBox id="_IDGenCheckBox4" selected="{hours/4}" select="onSelectHour"/>
+            <CheckBox id="_IDGenCheckBox5" selected="{hours/5}" select="onSelectHour"/>
+            <CheckBox id="_IDGenCheckBox6" selected="{hours/6}" select="onSelectHour"/>
+            <CheckBox id="_IDGenCheckBox7" selected="{hours/7}" select="onSelectHour"/>
+            <CheckBox id="_IDGenCheckBox8" selected="{hours/8}" select="onSelectHour"/>
+            <CheckBox id="_IDGenCheckBox9" selected="{hours/9}" select="onSelectHour"/>
+            <CheckBox id="_IDGenCheckBox10" selected="{hours/10}" select="onSelectHour"/>
+            <CheckBox id="_IDGenCheckBox11" selected="{hours/11}" select="onSelectHour"/>
+            <CheckBox id="_IDGenCheckBox12" selected="{hours/12}" select="onSelectHour"/>          
+            <CheckBox id="_IDGenCheckBox13" selected="{hours/13}" select="onSelectHour"/>
+            <CheckBox id="_IDGenCheckBox14" selected="{hours/14}" select="onSelectHour"/>
+            <CheckBox id="_IDGenCheckBox15" selected="{hours/15}" select="onSelectHour"/>
+            <CheckBox id="_IDGenCheckBox16" selected="{hours/16}" select="onSelectHour"/>
+            <CheckBox id="_IDGenCheckBox17" selected="{hours/17}" select="onSelectHour"/>
+            <CheckBox id="_IDGenCheckBox18" selected="{hours/18}" select="onSelectHour"/>
+            <CheckBox id="_IDGenCheckBox19" selected="{hours/19}" select="onSelectHour"/>
+            <CheckBox id="_IDGenCheckBox20" selected="{hours/20}" select="onSelectHour"/>
+            <CheckBox id="_IDGenCheckBox21" selected="{hours/21}" select="onSelectHour"/>
+            <CheckBox id="_IDGenCheckBox22" selected="{hours/22}" select="onSelectHour"/>
+            <CheckBox id="_IDGenCheckBox23" selected="{hours/23}" select="onSelectHour"/>
+          </cells>
+        </ColumnListItem>
+      </items>
+    </Table>
+  </VBox>
+    </Page>
+</mvc:View>
