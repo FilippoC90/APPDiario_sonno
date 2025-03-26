@@ -5,7 +5,7 @@
     <Page id="page" title="{i18n>title}">
     <HBox id="_IDGenHBox" alignItems="Center" justifyContent="Start" class="sapUiSmallMargin">
     <Label id="_IDGenLabel" text="Seleziona mese:" class="sapUiSmallMarginEnd"/>
-    <Select id="monthSelector" change="onMonthChange" selectedKey="5">
+    <Select id="monthSelector" change="onMonthChange" >
     <items>
       <core:Item id="_IDGenItem1" key="1" text="Gennaio" />
       <core:Item id="_IDGenItem" key="2" text="Febbraio" />
@@ -21,6 +21,9 @@
       <core:Item id="_IDGenItem12" key="12" text="Dicembre" />
     </items>
     </Select>
+    </HBox>
+    <HBox id="_IDGenHBox1" alignItems="End" justifyContent="Start" class="sapUiSmallMargin">
+     <Button id="Button" icon="sap-icon://save" text="Salva dati"  press="onSavePress" type="Emphasized" />
     </HBox>
     
     <VBox id="_IDGenVBox">
@@ -71,31 +74,104 @@
             <!-- Giorno -->
             <Text id="_IDGenText25" text="{date}" />
 
-            <!-- Celle orarie: CheckBox o Toggle -->
-            <CheckBox id="_IDGenCheckBox" selected="{hours/0}" select="onSelectHour"/>
-            <CheckBox id="_IDGenCheckBox1" selected="{hours/1}" select="onSelectHour"/>
-            <CheckBox id="_IDGenCheckBox2" selected="{hours/2}" select="onSelectHour"/>
-            <CheckBox id="_IDGenCheckBox3" selected="{hours/3}" select="onSelectHour"/>
-            <CheckBox id="_IDGenCheckBox4" selected="{hours/4}" select="onSelectHour"/>
-            <CheckBox id="_IDGenCheckBox5" selected="{hours/5}" select="onSelectHour"/>
-            <CheckBox id="_IDGenCheckBox6" selected="{hours/6}" select="onSelectHour"/>
-            <CheckBox id="_IDGenCheckBox7" selected="{hours/7}" select="onSelectHour"/>
-            <CheckBox id="_IDGenCheckBox8" selected="{hours/8}" select="onSelectHour"/>
-            <CheckBox id="_IDGenCheckBox9" selected="{hours/9}" select="onSelectHour"/>
-            <CheckBox id="_IDGenCheckBox10" selected="{hours/10}" select="onSelectHour"/>
-            <CheckBox id="_IDGenCheckBox11" selected="{hours/11}" select="onSelectHour"/>
-            <CheckBox id="_IDGenCheckBox12" selected="{hours/12}" select="onSelectHour"/>          
-            <CheckBox id="_IDGenCheckBox13" selected="{hours/13}" select="onSelectHour"/>
-            <CheckBox id="_IDGenCheckBox14" selected="{hours/14}" select="onSelectHour"/>
-            <CheckBox id="_IDGenCheckBox15" selected="{hours/15}" select="onSelectHour"/>
-            <CheckBox id="_IDGenCheckBox16" selected="{hours/16}" select="onSelectHour"/>
-            <CheckBox id="_IDGenCheckBox17" selected="{hours/17}" select="onSelectHour"/>
-            <CheckBox id="_IDGenCheckBox18" selected="{hours/18}" select="onSelectHour"/>
-            <CheckBox id="_IDGenCheckBox19" selected="{hours/19}" select="onSelectHour"/>
-            <CheckBox id="_IDGenCheckBox20" selected="{hours/20}" select="onSelectHour"/>
-            <CheckBox id="_IDGenCheckBox21" selected="{hours/21}" select="onSelectHour"/>
-            <CheckBox id="_IDGenCheckBox22" selected="{hours/22}" select="onSelectHour"/>
-            <CheckBox id="_IDGenCheckBox23" selected="{hours/23}" select="onSelectHour"/>
+            <!-- Celle orarie: CheckBox o Toggle -->                
+                          <Button id="_IDGenButton00"
+              icon="{icon}"
+              press="onButtonPress" 
+              width="30px" />
+                        <Button id="_IDGenButton01"
+              icon="{icon01}"
+              press="onButtonPress"
+              width="30px" />
+                        <Button id="_IDGenButton02"
+              icon="{icon02}"
+              press="onButtonPress"
+              width="30px" />
+                        <Button id="_IDGenButton03"
+              icon="{icon03}"
+              press="onButtonPress"
+              width="30px" />
+                        <Button id="_IDGenButton04"
+              icon="{icon04}"
+              press="onButtonPress"
+              width="30px" />
+                        <Button id="_IDGenButton05"
+              icon="{icon05}"
+              press="onButtonPress"
+              width="30px" />
+                        <Button id="_IDGenButton06"
+              icon="{icon06}"
+              press="onButtonPress"
+              width="30px" />
+                        <Button id="_IDGenButton07"
+              icon="{icon07}"
+              press="onButtonPress"
+              width="30px" />
+                        <Button id="_IDGenButton08"
+              icon="{icon08}"
+              press="onButtonPress"
+              width="30px" />
+                        <Button id="_IDGenButton09"
+              icon="{icon09}"
+              press="onButtonPress"
+              width="30px" />
+                        <Button id="_IDGenButton10"
+              icon="{icon10}"
+              press="onButtonPress"
+              width="30px" />
+                        <Button id="_IDGenButton11"
+              icon="{icon11}"
+              press="onButtonPress"
+              width="30px" />
+                          <Button id="_IDGenButton12"
+              icon="{icon12}"
+              press="onButtonPress"
+              width="30px" />
+                        <Button id="_IDGenButton13"
+              icon="{icon13}"
+              press="onButtonPress"
+              width="30px" />
+                        <Button id="_IDGenButton14"
+              icon="{icon14}"
+              press="onButtonPress"
+              width="30px" />
+                        <Button id="_IDGenButton15"
+              icon="{icon15}"
+              press="onButtonPress"
+              width="30px" />
+                        <Button id="_IDGenButton16"
+              icon="{icon16}"
+              press="onButtonPress"
+              width="30px" />
+                        <Button id="_IDGenButton17"
+              icon="{icon17}"
+              press="onButtonPress"
+              width="30px" />
+                        <Button id="_IDGenButton18"
+              icon="{icon18}"
+              press="onButtonPress"
+              width="30px" />
+                        <Button id="_IDGenButton19"
+              icon="{icon19}"
+              press="onButtonPress"
+              width="30px" />
+                        <Button id="_IDGenButton20"
+              icon="{icon20}"
+              press="onButtonPress20"
+              width="30px" />
+                        <Button id="_IDGenButton21"
+              icon="{icon21}"
+              press="onButtonPress"
+              width="30px" />
+                        <Button id="_IDGenButton22"
+              icon="{icon22}"
+              press="onButtonPress"
+              width="30px" />
+                        <Button id="_IDGenButton23"
+              icon="{icon23}"
+              press="onButtonPress"
+              width="30px" />
+            
           </cells>
         </ColumnListItem>
       </items>
