@@ -22,10 +22,10 @@
     </items>
     </Select>
     </HBox>
-    <HBox id="_IDGenHBox1" alignItems="End" justifyContent="Start" class="sapUiSmallMargin">
+     <HBox id="_IDGenHBox1" alignItems="End" justifyContent="Start" class="sapUiSmallMargin">
      <Button id="Button" icon="sap-icon://save" text="Salva dati"  press="onSavePress" type="Emphasized" />
+     <Text text="clicca una volta per indicare 1 ora di sonno 2 volte per mezz'ora" type="Emphasized" textAlign="End"/>
     </HBox>
-    
     <VBox id="_IDGenVBox">
     <Table
       id="sleepTable"
