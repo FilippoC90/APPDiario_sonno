@@ -1,0 +1,12 @@
+/* Enter your custom styles here */
+.hourCell {
+  width: 40px;
+  height: 30px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  user-select: none;
+}
+
+.hourCell.selected {
+  background-color: #3f88c5;
+}
